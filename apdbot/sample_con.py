@@ -12,9 +12,9 @@ class Config(object):
     # the download location, where the HTTP Server runs
     DOWNLOAD_LOC = "./DOWNLOADS"
     # Telegram maximum file upload size
-    MAX_SIZE = 50000000
-    TG_MAX_SIZE = 2097152000
-    FREE_UZR_MAX_SIZE = 50000000
+    MAX_SIZE = 99997152000
+    TG_MAX_SIZE = 99997152000
+    FREE_UZR_MAX_SIZE = 99997152000
     # chunk size that should be used with requests
     CHUNK_SIZE = int(os.environ.get("CHUNK_SIZE", 128))
     # default thumbnail to be used in the videos
@@ -27,7 +27,7 @@ class Config(object):
     ARIA_STARTED_PORT = int(os.environ.get("ARIA_STARTED_PORT", 6800))
     EDIT_SLEEP_TIME = int(os.environ.get("EDIT_SLEEP_TIME", 1))
     MAX_TIME_TO_WAIT_FOR_START = int(os.environ.get("MAX_TIME_TO_WAIT_FOR_START", 3000))
-    MAX_SIZE_TO_SPLIT = int(os.environ.get("MAX_SIZE_TO_SPLIT", 1987152000))
+    MAX_SIZE_TO_SPLIT = int(os.environ.get("MAX_SIZE_TO_SPLIT", 99997152000))
     FINISHED_PROGRESS_STR = os.environ.get("FINISHED_PROGRESS_STR", "█")
     UN_FINISHED_PROGRESS_STR = os.environ.get("UN_FINISHED_PROGRESS_STR", "░")
     TG_OFFENSIVE_API = os.environ.get("TG_OFFENSIVE_API", None)
